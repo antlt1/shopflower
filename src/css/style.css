@@ -1,0 +1,270 @@
+/*
+    Màu 9 của trang
+    #7952b3 -- tím
+*/
+
+/* #region Các biến mặt định */
+*,
+*::after,
+*::before{
+    margin:0;
+    font-family: sans-serif;
+    left:0px;
+    user-select: none;
+}
+:root{
+    --mauden: black;
+    --mautrang: white;
+    --mauchu:#0d6efd; 
+    --maunen9:#7952b3;
+    --mauline:#6C757D;
+    --maunenphu:#EFF1F5;
+    --maunenphu1:#bdbdbd38;
+}
+html{
+    margin-left:0;
+    margin-right:0;
+    text-align: center;
+    background-color: var(--maunenphu);
+}
+body{
+    /* border: 1px black solid; */
+    height: 100vh;
+}
+a{
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+}
+/* #endregion */
+
+/* #region Set boostrap màu */
+/* Background */
+.bg-black{
+    background-color: var(--mauden);
+}
+.bg-white{
+    background-color: var(--mautrang);
+}
+.bg-matdinh{
+    background-color: var(--maunen9);
+}
+.bg-maudo{
+    background-color: #dc3545;
+}
+.bg-mauxanhbien{
+    background-color:#0d6efd;
+}
+.bg-mauxanhla{
+    background-color:#198754;
+}
+.bg-mauvang{
+    background-color:#ffc107;
+}
+.bg-nenphu{
+    background-color: #6c757d38;
+}
+.bg-danguoi{
+    background-color: #e8cfdd;
+}
+/* Color */
+.cl-black{
+   color:var(--mauden); 
+}
+.cl-white{
+    color:var(--mautrang); 
+ }
+.cl-matdinh{
+    color:var(--mauchu);
+}
+.cl-active{
+    font-style: bold;
+    font-weight: 600;
+}
+/* #endregion */
+
+/*#region Các grid  */
+.table{
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+.table > .col{
+    width: auto;
+   max-width: 40%;
+   margin: auto 0 auto 0;
+   text-decoration: none;
+   cursor: pointer;
+   padding: 15px;
+}
+.table > .col-search{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: auto;
+}
+.col-1{
+    width: 400px;
+}
+/*#endregion  */
+
+/*#region input  */
+
+
+/*#endregion  */
+
+/*#region button  */
+.btn input[type="button"]{
+    background-image: url(../img/icon/search.svg);
+    background-position: unset;
+    background-attachment: fixed;
+}
+/*#endregion  */
+
+/*#region Các float */
+.float-right{
+    float:right;
+}
+.float-left{
+    float:left;
+}
+/* #endregion */
+
+/* #region Các out line*/
+.out-line--none{
+    outline: none;
+}
+/* #endregion */
+
+/* #region Border */
+.border-line--none{
+    border: 0px solid;
+}
+.border-line--bottom{
+    border-bottom: 1px solid;
+    border-color: var(--mauline);
+}
+.border-color--matdinh{
+    border-color: var(--mauline);
+}
+/* #endregion */
+
+/*#region  Các display  */
+.display--none{
+    display: none;
+}
+.display-flex{
+    display: flex;
+}
+.display-grid{
+    display: grid;
+}
+.display-inline-block{
+    display: inline-block;
+}
+/* #endregion */
+/* #region font */
+@font-face {
+    font-family: Rouge Script;
+    src: url(/src/font/RougeScript-Regular.ttf);
+}
+/* #endregion */
+/*#region Button */
+.btn{
+    display: inline-block;
+    width: fit-content;
+    padding: 12px;
+    min-width:50px;
+    border-radius: 4px;
+    margin: 4px 4px 4px 4px;
+    cursor:pointer;
+}
+.btn:hover{
+    opacity: 0.9;
+}
+.btn:active{
+    outline: var(--maunenphu1) 3px solid;
+}
+.btn:focus{
+    outline: var(--maunenphu1) 3px solid;
+}
+/*#endregion  */
+/*#region  */
+.nav__logo{
+ font-family: Rouge Script;
+ font-size: 2.8rem;
+ margin: 20px 0 20px 0;
+}
+
+/* Thanh nav */
+.nav{
+    height: 5vh;
+    display: flex;
+    margin-left: 0px;
+    position: relative;
+  }
+.nav .table{
+    margin: 0 10% 0 10%;
+    width: 79%;
+}
+.nav .table .col{
+    margin-left: 10px;
+
+}
+.nav .table .col:nth-child(2){
+    
+}
+.nav__box{
+    width: 100%;
+}
+.nav .sub-col{
+    width: 101%;
+    margin-top: 10px;
+    position: absolute;
+    z-index: 999;
+    flex-direction: column;
+    display: grid;
+}
+/* Nút tìm */
+.search{ 
+    width: 40%;
+    flex-basis: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 10px;
+}
+.search:active{
+    outline: none; 
+}
+.search__box{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.nav__txt__search{
+    margin:0 50% 0 10% 0;
+    font-size: 1.6rem;
+}
+.nav__txt__search:focus{
+outline: none;
+}
+.search__close{
+    cursor: pointer;
+}
+/* thanh main */
+  .main{
+      margin: 2% 10% 0% 10%;
+      height: 80vh;
+      position: relative;
+  }
+  .radius-matdinh{
+    border-radius: 8px;
+  }
+  .form__trash{
+      width: 30%;
+      height: 100%;
+      
+  }
